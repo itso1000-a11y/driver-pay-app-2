@@ -47,9 +47,29 @@ function App() {
   });
   const [index, setIndex] = useState(1);
   const [showSettings, setShowSettings] = useState(false);
-  const [rates, setRates] = useState(() => {
-    try { return JSON.parse(localStorage.getItem("driver-pay-js-rates")) || null; } catch { return null; }
-  } || { weekday: "14.00", weekend: "21.00", overtime: "17.50", threshold: "10", food: "10", nightOut: "26", bonus: "11.25" });
+ const [rates, setRates] = useState(() => {
+  try {
+    return JSON.parse(localStorage.getItem("driver-pay-js-rates")) || {
+      weekday: "14.00",
+      weekend: "21.00",
+      overtime: "17.50",
+      threshold: "10",
+      food: "10",
+      nightOut: "26",
+      bonus: "11.25"
+    };
+  } catch {
+    return {
+      weekday: "14.00",
+      weekend: "21.00",
+      overtime: "17.50",
+      threshold: "10",
+      food: "10",
+      nightOut: "26",
+      bonus: "11.25"
+    };
+  }
+});
 
   function saveDays(next) { setDays(next); localStorage.setItem("driver-pay-js-days", JSON.stringify(next)); }
   function saveRates(next) { setRates(next); localStorage.setItem("driver-pay-js-rates", JSON.stringify(next)); }
