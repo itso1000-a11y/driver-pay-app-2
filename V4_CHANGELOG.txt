@@ -1,0 +1,18 @@
+Driver Pay App V4 test build from V3 base
+
+Main changes in this build:
+- Kept V3 layout/flow as the base.
+- Added London Bonus to bonus types and settings.
+- Start time suggestion changed from buttons to information:
+  - 11h rest time is shown as the Start field placeholder.
+  - 9h option is shown as a small line below the Start field.
+  - 9h shows a limit message when reduced rests are used.
+- Save & Next can use the 11h suggested start when Start is empty and Finish is entered.
+- Work day now needs Start + Finish; otherwise it alerts instead of silently moving on.
+- Daily summary no longer shows £ values; it shows hours, overtime, km, bonuses and night out.
+- Week day list no longer shows per-day net/gross amounts.
+- Removed the strange arrow from the KM hint.
+
+Notes:
+- Weekly financial totals are still in Week View.
+- This is still a test V4 build, not final polish.

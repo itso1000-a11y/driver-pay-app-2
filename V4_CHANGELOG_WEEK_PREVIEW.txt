@@ -1,0 +1,18 @@
+Driver Pay App V4 - Week Preview update
+
+Changes:
+- Reworked Week Preview modal.
+- Header now shows Estimated Net, Payslip Net input, and colour-coded Difference.
+- Days list now shows Hours, OT, KM, Bonuses text, and SR indicator.
+- Days list does not show £ values.
+- Added Show breakdown / Hide breakdown.
+- Breakdown includes Base pay, Overtime, Bonuses, Food, Night out, Tax, NI, Net, and Split rests.
+- End Week now opens a confirmation preview first.
+- End Week confirmation shows Total hours, KM, Estimated Net, Payslip Net, Difference, Reduced rests, and Split rests.
+- Confirm & Close Week remains available with options for remaining Off/Holiday days.
+
+Unchanged:
+- Day screen flow.
+- v3 layout feel.
+- Core calculations.
+- Start/KM/rest logic.
