@@ -1,6 +1,17 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-
-export default defineConfig({
-  plugins: [react()]
-});
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driver Pay App V4</title>
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="description" content="Driver Pay App V4" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
